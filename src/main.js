@@ -1,8 +1,15 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App";
 
-Vue.config.productionTip = false
+// These functions do THE SAME THING
+
+// new Vue({
+// 	el: "#app",
+// 	render: function(createElement) {
+// 		return createElement(App);
+// 	},
+// });
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+	render: (h) => h(App), // es6 arrow function
+}).$mount("#app");

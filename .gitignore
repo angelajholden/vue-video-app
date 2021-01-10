@@ -2,6 +2,12 @@
 node_modules
 /dist
 
+# custom
+.npm-debug.log
+.tmp
+.sass-cache
+*.css.map
+*.min.js.map
 
 # local env files
 .env.local
