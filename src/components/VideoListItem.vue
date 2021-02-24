@@ -7,7 +7,9 @@
 <script>
 	export default {
 		name: "VideoListItem",
-		props: ["video"],
+		props: {
+			video: Object,
+		},
 	};
 </script>
 

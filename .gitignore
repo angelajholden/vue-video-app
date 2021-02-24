@@ -8,6 +8,7 @@ node_modules
 .sass-cache
 *.css.map
 *.min.js.map
+.notes.md
 
 # local env files
 .env.local

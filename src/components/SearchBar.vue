@@ -10,6 +10,8 @@
 		methods: {
 			onInput: function(event) {
 				// console.log(event.target.value);
+				// child > parent communicates by 'emitting' an event
+				// 'termChange' is a name we made up; semantic
 				this.$emit("termChange", event.target.value);
 			},
 		},
