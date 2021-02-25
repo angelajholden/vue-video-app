@@ -1,6 +1,6 @@
 <template>
 	<!-- Can only have one root element -->
-	<div>
+	<div class="container">
 		<!-- <div>Hi There!</div> -->
 		<!-- '@termChange' is the event the SearchBar emits -->
 		<!-- 'onTermChange' is the method/function we create below -->

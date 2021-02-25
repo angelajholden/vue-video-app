@@ -1,5 +1,5 @@
 <template>
-	<ul>
+	<ul class="list-group">
 		<!-- Video List -->
 		<!-- anytime we want to access any data, property or computed function from within a template, we call it exactly what it is and write out it's name -->
 		<!-- {{
