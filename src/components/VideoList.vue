@@ -1,12 +1,12 @@
 <template>
 	<ul class="list-group">
-		<!-- Video List -->
 		<!-- anytime we want to access any data, property or computed function from within a template, we call it exactly what it is and write out it's name -->
 		<!-- {{
 			videos.length
 		}} -->
-		<VideoListItem v-for="video in videos" :video="video" :key="video.etag"> </VideoListItem>
+		<VideoListItem v-for="video in videos" :video="video" :key="video.etag" @videoSelect="onVideoSelect"> </VideoListItem>
 	</ul>
+
 	<!-- v-for is the forEach loop -->
 	<!-- v-bind:video defines the prop for VideoListIem (child) -->
 	<!-- v-bind:video value must be the same as 'video' (singular item) in the v-for -->
@@ -26,6 +26,13 @@
 			// we expect this to be an array of objects, a form of validation
 			// could also just do ['videos'] <-- this lists out the videos
 			videos: Array,
+		},
+		methods: {
+			// new method specific to VideoList
+			onVideoSelect(video) {
+				// emit another event up to the parent
+				this.$emit("videoSelect", video);
+			},
 		},
 	};
 </script>
